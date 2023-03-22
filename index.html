@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,35 +10,86 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Registration form</title>
 </head>
+
 <body>
     <div class="registration_form">
         <!-- header -->
-<header>
-    <img src="images/header_logo.svg" alt="logo">
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>Product</li>
-            <li class="contact_style">Contact</li>
-        </ul>
-    </nav>
-    <i class="fa-solid fa-cart-shopping"></i>
+        <header>
+            <img src="images/header_logo.svg" alt="logo">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Product</li>
+                    <li class="contact_style">Contact</li>
+                </ul>
+            </nav>
+            <i class="fa-solid fa-cart-shopping"></i>
 
-</header>
+        </header>
+        <main>
+            <h1>Contact Us</h1>
+            <form method="get">
+                <div class="input_info1">
+                    <label class="personal_info" for="First name">FIRST NAME</label>
+                    <input class="personal_info_input" type="text" id="First name" name="first name"
+                        placeholder="First Name">
 
+                    <label class="personal_info" for="age">AGE</label>
+                    <input class="personal_info_input" type="number" id="age" name="Age" value="age" placeholder="Age">
+                </div>
 
+                <div class="input_info2">
+                    <label class="personal_info" for="Last name">LAST NAME</label>
+                    <input class="personal_info_input" type="text" id="Last name" name="last name"
+                        placeholder="Last Name">
 
+                    <label class="personal_info" for="Email">EMAIL</label>
+                    <input class="personal_info_input" type="email" id="Email" name="email" placeholder="Email Adress">
+                </div>
+                <!-- radio -->
+                <h2>The schedule of work you are interested in</h2>
 
+                <div class="radio_div">
+                    <input class="radio_input" type="radio" id="full-time" name="job type" value="Full-Time">
+                    <label class="input_text" for="full-time">Full-Time</label>
 
+                    <input class="radio_input" type="radio" id="part-time" name="job type" value="Part-Time">
+                    <label class="input_text" for="part-time">Part-Time</label>
 
+                    <input class="radio_input" type="radio" id="remote" name="job type" value="Remote">
+                    <label class="input_text" for="remote">Remote</label>
+                </div>
+                <!-- checkbox -->
+                <h2>Select the programming languages, you know</h2>
+                <div class="checkbox_div">
+                    <input class="checkbox_input" type="checkbox" id="angular" value="Angular" name="language">
+                    <label class="input_text" for="angular">Angular</label>
 
+                    <input class="checkbox_input" type="checkbox" id="python" value="Python" name="language">
+                    <label class="input_text" for="python">Python</label>
 
+                    <input class="checkbox_input" type="checkbox" id="js" value="Javascript" name="language">
+                    <label class="input_text" for="js">Javascript</label>
+                </div>
+                <!-- choose file -->
+                <h2>Attach any supporting documents (resume, CV, cover letter, etc.) </h2>
+                <div>
+                    <input class="choose_file" type="file" id="myfile" name="myfile">
+                </div>
+                <!-- send and reset -->
 
+                <div class="res_sub_div">
+                    <button class="res_sub" type="submit" value="SEND MESSAGE">SEND MESSAGE</button>
+                    <button class="res_sub reset" type="reset" value="RESET">RESET</button>
+                </div>
+            </form>
+        </main>
+        <!-- footer -->
+        <footer>
 
-
-
-
+        </footer>
     </div>
-    
+
 </body>
+
 </html>
