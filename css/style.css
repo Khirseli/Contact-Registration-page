@@ -127,6 +127,7 @@ h2{
     background: #FDD504;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
 }
 .reset{
     background: #15C1E7;
