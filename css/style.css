@@ -35,6 +35,8 @@ li{
 }
 li:hover{
     color: #FD0404;
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 /* main */
 main{
@@ -133,8 +135,22 @@ h2{
     background: #15C1E7;
 }
 /* footer */
-
-
+footer{
+    /* width: 100%; */
+    height: 200px;
+    margin-top: 128px;
+    background: #13345B;
+}
+.footer_icons{
+    padding-top: 60px;
+}
+.fb_logo{
+    margin-left: 30%;
+}
+.icons:hover {
+    transform: translateY(-16px);
+    transition:0.5s;
+}
 
 
 
